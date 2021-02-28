@@ -12,6 +12,8 @@ local function on_draw()
 		end
 
 		if last_baron_attacked_time ~= 0 and game:get_gametime() < last_baron_attacked_time + 3.5 then
+			screen_size = game:get_screen_size()
+			
 			renderer:draw_text_centered(screen_size:width() / 2, 170, "Baron is being attacked!")
 		end
 	end

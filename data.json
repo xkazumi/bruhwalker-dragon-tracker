@@ -1,6 +1,6 @@
 {
-	"name": "Viktor Example",
-	"desc": "Example Script for Viktor",
+	"name": "Dragon Tracker",
+	"desc": "Tracks dragon and baron if they are being attacked in fog of war",
 	"author": "kazumi",
 	"version": "v2",
 	"version_txt": "https://raw.githubusercontent.com/xkazumi/bruhwalker-dragon-tracker/main/version.txt",

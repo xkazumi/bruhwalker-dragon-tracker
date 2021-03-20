@@ -6,20 +6,20 @@ last_baron_attacked_time = 0
 local function on_draw()
 	if menu:get_value(dragon_tracker_enabled) == 1 then
 		if is_dragon_attacked then
-			screen_size = game:get_screen_size()
+			screen_size = game.screen_size
 
-			renderer:draw_text_centered(screen_size:width() / 2, 150, "Dragon is being attacked!")
+			renderer:draw_text_centered(screen_size.width / 2, 150, "Dragon is being attacked!")
 		end
 
-		if last_baron_attacked_time ~= 0 and game:get_gametime() < last_baron_attacked_time + 3.5 then
-			screen_size = game:get_screen_size()
+		if last_baron_attacked_time ~= 0 and game.game_time < last_baron_attacked_time + 3.5 then
+			screen_size = game.screen_size
 			
-			renderer:draw_text_centered(screen_size:width() / 2, 170, "Baron is being attacked!")
+			renderer:draw_text_centered(screen_size.width / 2, 170, "Baron is being attacked!")
 		end
 	end
 end
 
-local function on_object_created(object_id, obj_name)
+local function on_object_created(object, obj_name)
 	if obj_name == "SRU_Dragon_Spawn_Praxis.troy" then
 		is_dragon_attacked = true
 	end
@@ -41,7 +41,7 @@ local function on_object_created(object_id, obj_name)
 	end
 
 	if obj_name == "SRU_Baron_Base_BA1_tar.troy" then
-		last_baron_attacked_time = game:get_gametime()
+		last_baron_attacked_time = game.game_time
 	end
 end
 

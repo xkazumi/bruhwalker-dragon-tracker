@@ -2,8 +2,8 @@
 	"name": "Dragon Tracker",
 	"desc": "Tracks dragon and baron if they are being attacked in fog of war",
 	"author": "kazumi",
-	"version": "v2",
+	"version": "v3",
 	"version_txt": "https://raw.githubusercontent.com/xkazumi/bruhwalker-dragon-tracker/main/version.txt",
 	"download_link": "https://github.com/xkazumi/bruhwalker-dragon-tracker",
-	"last_updated": 1614261786
+	"last_updated": 1616231592
 }
